@@ -210,13 +210,13 @@ function DetailedRooms() {
         <section className="w-full lg:w-[20%] flex flex-col items-center gap-8">
           {/* Reserve Card */}
           <div className="relative w-80 h-85 ml-16 rounded-[14px] z-10 overflow-hidden flex flex-col items-center justify-center shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
-            <div className="relative z-[2] w-full h-full flex flex-col justify-between p-6 bg-white/95 backdrop-blur-xl rounded-[10px]">
+            <div className="relative z-2 w-full h-full flex flex-col justify-between p-6 bg-white/95 backdrop-blur-xl rounded-[10px]">
               {/* Top content */}
               <div>
                 <h3 className="text-lg font-bold text-gray-900 leading-snug">
                   {specificRoom.name}
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">for 4 Days</p>
+                <p className="text-sm text-gray-500 mt-1">for {specificRoom.duration}</p>
 
                 <p className="text-xs text-gray-400 mt-3 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#05B278]"></span>
@@ -224,7 +224,7 @@ function DetailedRooms() {
                 </p>
 
                 <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-                  {specificRoom.aboutUs.slice(0, 30)}...
+                  {specificRoom.aboutUs.slice(0, 80)}...
                 </p>
               </div>
 

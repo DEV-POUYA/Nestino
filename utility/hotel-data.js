@@ -3,91 +3,76 @@ import tornto1 from "@/assets/hotel/tornto1.webp";
 import tornto2 from "@/assets/hotel/tornto2.webp";
 import tornto3 from "@/assets/hotel/tornto3.webp";
 import tornto4 from "@/assets/hotel/tornto4.webp";
-
 // Room 2: single comfort - New York
 import ny1 from "@/assets/hotel/ny1.webp";
 import ny2 from "@/assets/hotel/ny2.webp";
 import ny3 from "@/assets/hotel/ny3.webp";
 import ny4 from "@/assets/hotel/ny4.webp";
-
 // Room 3: family suite - Paris
 import paris1 from "@/assets/hotel/paris1.webp";
 import paris2 from "@/assets/hotel/paris2.webp";
 import paris3 from "@/assets/hotel/paris3.webp";
 import paris4 from "@/assets/hotel/paris4.webp";
-
 // Room 4: deluxe king - Dubai
 import dubai1 from "@/assets/hotel/dubai1.webp";
 import dubai2 from "@/assets/hotel/dubai2.webp";
 import dubai3 from "@/assets/hotel/dubai3.webp";
 import dubai4 from "@/assets/hotel/dubai4.webp";
-
 // Room 5: ocean view twin - Phuket
 import phuket1 from "@/assets/hotel/phuket1.webp";
 import phuket2 from "@/assets/hotel/phuket2.webp";
 import phuket3 from "@/assets/hotel/phuket3.webp";
 import phuket4 from "@/assets/hotel/phuket4.webp";
-
 // Room 6: executive business - Tokyo
 import tokyo1 from "@/assets/hotel/tokyo1.webp";
 import tokyo2 from "@/assets/hotel/tokyo2.webp";
 import tokyo3 from "@/assets/hotel/tokyo3.webp";
 import tokyo4 from "@/assets/hotel/tokyo4.webp";
-
 // Room 7: honeymoon suite - Rome
 import rome1 from "@/assets/hotel/rome1.webp";
 import rome2 from "@/assets/hotel/rome2.webp";
 import rome3 from "@/assets/hotel/rome3.webp";
 import rome4 from "@/assets/hotel/rome4.webp";
-
 // Room 8: budget twin - Mumbai
 import mumbai1 from "@/assets/hotel/mumbai1.webp";
 import mumbai2 from "@/assets/hotel/mumbai2.webp";
 import mumbai3 from "@/assets/hotel/mumbai3.webp";
 import mumbai4 from "@/assets/hotel/mumbai4.webp";
-
 // Room 9: penthouse luxury - Singapore
 import singapore1 from "@/assets/hotel/singapore1.webp";
 import singapore2 from "@/assets/hotel/singapore2.webp";
 import singapore3 from "@/assets/hotel/singapore3.webp";
 import singapore4 from "@/assets/hotel/singapore4.webp";
-
 // Room 10: mountain chalet - Zurich
 import zurich1 from "@/assets/hotel/zurich1.webp";
 import zurich2 from "@/assets/hotel/zurich2.webp";
 import zurich3 from "@/assets/hotel/zurich3.webp";
 import zurich4 from "@/assets/hotel/zurich4.webp";
-
 // Room 11: standard queen - Sydney
 import sydney1 from "@/assets/hotel/sydney1.webp";
 import sydney2 from "@/assets/hotel/sydney2.webp";
 import sydney3 from "@/assets/hotel/sydney3.webp";
 import sydney4 from "@/assets/hotel/sydney4.webp";
-
 // Room 12: villa pool access - Bali
 import bali1 from "@/assets/hotel/bali1.webp";
 import bali2 from "@/assets/hotel/bali2.webp";
 import bali3 from "@/assets/hotel/bali3.webp";
 import bali4 from "@/assets/hotel/bali4.webp";
-
 // Room 13: historic heritage - Barcelona
 import barcelona1 from "@/assets/hotel/barcelona1.webp";
 import barcelona2 from "@/assets/hotel/barcelona2.webp";
 import barcelona3 from "@/assets/hotel/barcelona3.webp";
 import barcelona4 from "@/assets/hotel/barcelona4.webp";
-
 // Room 14: eco friendly room - oslo
 import norway1 from "@/assets/hotel/norway1.webp";
 import norway2 from "@/assets/hotel/norway2.webp";
 import norway3 from "@/assets/hotel/norway3.webp";
 import norway4 from "@/assets/hotel/norway4.webp";
-
 // Room 15: loft apartment - Berlin
 import berlin1 from "@/assets/hotel/berlin1.webp";
 import berlin2 from "@/assets/hotel/berlin2.webp";
 import berlin3 from "@/assets/hotel/berlin3.webp";
 import berlin4 from "@/assets/hotel/berlin4.webp";
-
 // Room 16: royal presidential - London
 import london1 from "@/assets/hotel/london1.webp";
 import london2 from "@/assets/hotel/london2.webp";
@@ -117,9 +102,11 @@ const hotelCollection = [
       "hairdryer",
       "24h-reception",
     ],
-    price: "1250000",
+    price: "120",
     address: "canada , tornto",
     city: "tornto",
+    guest: { adults: 2, kids: 1 },
+    duration: "3 days",
   },
   {
     id: 2,
@@ -143,9 +130,11 @@ const hotelCollection = [
       "hairdryer",
       "city-view",
     ],
-    price: "850000",
+    price: "85",
     address: "usa , new york",
     city: "new york",
+    guest: { adults: 1, kids: 0 },
+    duration: "4 days",
   },
   {
     id: 3,
@@ -169,9 +158,11 @@ const hotelCollection = [
       "smart-tv",
       "washing-machine",
     ],
-    price: "2450000",
+    price: "175",
     address: "france , paris",
     city: "paris",
+    guest: { adults: 2, kids: 2 },
+    duration: "4 days",
   },
   {
     id: 4,
@@ -195,9 +186,11 @@ const hotelCollection = [
       "premium-toiletries",
       "turndown-service",
     ],
-    price: "1850000",
+    price: "155",
     address: "uae , dubai",
     city: "dubai",
+    guest: { adults: 2, kids: 0 },
+    duration: "3 days",
   },
   {
     id: 5,
@@ -221,9 +214,11 @@ const hotelCollection = [
       "safety-box",
       "rain-shower",
     ],
-    price: "1650000",
+    price: "140",
     address: "thailand , phuket",
     city: "phuket",
+    guest: { adults: 2, kids: 0 },
+    duration: "5 days",
   },
   {
     id: 6,
@@ -247,9 +242,11 @@ const hotelCollection = [
       "usb-ports",
       "daily-newspaper",
     ],
-    price: "2100000",
+    price: "165",
     address: "japan , tokyo",
     city: "tokyo",
+    guest: { adults: 1, kids: 0 },
+    duration: "3 days",
   },
   {
     id: 7,
@@ -273,9 +270,11 @@ const hotelCollection = [
       "mood-lighting",
       "late-checkout",
     ],
-    price: "3200000",
+    price: "190",
     address: "italy , rome",
     city: "rome",
+    guest: { adults: 2, kids: 0 },
+    duration: "4 days",
   },
   {
     id: 8,
@@ -299,9 +298,11 @@ const hotelCollection = [
       "24h-reception",
       "luggage-storage",
     ],
-    price: "650000",
+    price: "80",
     address: "india , mumbai",
     city: "mumbai",
+    guest: { adults: 2, kids: 0 },
+    duration: "5 days",
   },
   {
     id: 9,
@@ -325,9 +326,11 @@ const hotelCollection = [
       "jacuzzi",
       "limousine-service",
     ],
-    price: "4500000",
+    price: "200",
     address: "singapore , singapore",
     city: "singapore",
+    guest: { adults: 2, kids: 1 },
+    duration: "3 days",
   },
   {
     id: 10,
@@ -351,9 +354,11 @@ const hotelCollection = [
       "mini-bar",
       "sound-system",
     ],
-    price: "1750000",
+    price: "150",
     address: "switzerland , zurich",
     city: "zurich",
+    guest: { adults: 2, kids: 1 },
+    duration: "4 days",
   },
   {
     id: 11,
@@ -377,9 +382,11 @@ const hotelCollection = [
       "usb-charging",
       "city-view",
     ],
-    price: "950000",
+    price: "95",
     address: "australia , sydney",
     city: "sydney",
+    guest: { adults: 2, kids: 0 },
+    duration: "4 days",
   },
   {
     id: 12,
@@ -403,9 +410,11 @@ const hotelCollection = [
       "tea-coffee",
       "butler-service",
     ],
-    price: "3800000",
+    price: "185",
     address: "bali , indonesia",
     city: "bali",
+    guest: { adults: 2, kids: 2 },
+    duration: "6 days",
   },
   {
     id: 13,
@@ -429,9 +438,11 @@ const hotelCollection = [
       "premium-toiletries",
       "city-view",
     ],
-    price: "1950000",
+    price: "145",
     address: "spain , barcelona",
     city: "barcelona",
+    guest: { adults: 2, kids: 0 },
+    duration: "3 days",
   },
   {
     id: 14,
@@ -455,9 +466,11 @@ const hotelCollection = [
       "tea-coffee",
       "bike-rental",
     ],
-    price: "1400000",
+    price: "110",
     address: "Norway , oslo",
     city: "norway",
+    guest: { adults: 1, kids: 0 },
+    duration: "3 days",
   },
   {
     id: 15,
@@ -481,9 +494,11 @@ const hotelCollection = [
       "bluetooth-speaker",
       "city-view",
     ],
-    price: "1600000",
+    price: "130",
     address: "germany , berlin",
     city: "berlin",
+    guest: { adults: 2, kids: 1 },
+    duration: "3 days",
   },
   {
     id: 16,
@@ -507,7 +522,10 @@ const hotelCollection = [
       "wine-cellar",
       "security-service",
     ],
-    price: "6500000",
+    price: "195",
+    city: "london",
+    guest: { adults: 2, kids: 2 },
+    duration: "4 days",
   },
 ];
 

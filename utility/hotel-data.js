@@ -105,8 +105,8 @@ const hotelCollection = [
     price: "120",
     address: "canada , tornto",
     city: "tornto",
-    guest: { adults: 2, kids: 1 },
-    duration: "3 days",
+    guest: { adults: 2, kids: 0 },
+    duration: 3,
   },
   {
     id: 2,
@@ -134,7 +134,7 @@ const hotelCollection = [
     address: "usa , new york",
     city: "new york",
     guest: { adults: 1, kids: 0 },
-    duration: "4 days",
+    duration: 4,
   },
   {
     id: 3,
@@ -189,8 +189,8 @@ const hotelCollection = [
     price: "155",
     address: "uae , dubai",
     city: "dubai",
-    guest: { adults: 2, kids: 0 },
-    duration: "3 days",
+    guest: { adults: 3, kids: 0 },
+    duration: 6,
   },
   {
     id: 5,
@@ -218,7 +218,7 @@ const hotelCollection = [
     address: "thailand , phuket",
     city: "phuket",
     guest: { adults: 2, kids: 0 },
-    duration: "5 days",
+    duration: 5,
   },
   {
     id: 6,
@@ -245,8 +245,8 @@ const hotelCollection = [
     price: "165",
     address: "japan , tokyo",
     city: "tokyo",
-    guest: { adults: 1, kids: 0 },
-    duration: "3 days",
+    guest: { adults: 2, kids: 0 },
+    duration: 3,
   },
   {
     id: 7,
@@ -273,8 +273,8 @@ const hotelCollection = [
     price: "190",
     address: "italy , rome",
     city: "rome",
-    guest: { adults: 2, kids: 0 },
-    duration: "4 days",
+    guest: { adults: 2, kids: 1 },
+    duration: 7,
   },
   {
     id: 8,
@@ -301,8 +301,8 @@ const hotelCollection = [
     price: "80",
     address: "india , mumbai",
     city: "mumbai",
-    guest: { adults: 2, kids: 0 },
-    duration: "5 days",
+    guest: { adults: 2, kids: 3 },
+    duration: 5,
   },
   {
     id: 9,
@@ -329,8 +329,8 @@ const hotelCollection = [
     price: "200",
     address: "singapore , singapore",
     city: "singapore",
-    guest: { adults: 2, kids: 1 },
-    duration: "3 days",
+    guest: { adults: 3, kids: 1 },
+    duration: 10,
   },
   {
     id: 10,
@@ -358,7 +358,7 @@ const hotelCollection = [
     address: "switzerland , zurich",
     city: "zurich",
     guest: { adults: 2, kids: 1 },
-    duration: "4 days",
+    duration: 8,
   },
   {
     id: 11,
@@ -386,7 +386,7 @@ const hotelCollection = [
     address: "australia , sydney",
     city: "sydney",
     guest: { adults: 2, kids: 0 },
-    duration: "4 days",
+    duration: 4,
   },
   {
     id: 12,
@@ -414,7 +414,7 @@ const hotelCollection = [
     address: "bali , indonesia",
     city: "bali",
     guest: { adults: 2, kids: 2 },
-    duration: "6 days",
+    duration: 6,
   },
   {
     id: 13,
@@ -442,7 +442,7 @@ const hotelCollection = [
     address: "spain , barcelona",
     city: "barcelona",
     guest: { adults: 2, kids: 0 },
-    duration: "3 days",
+    duration: 3,
   },
   {
     id: 14,
@@ -469,8 +469,8 @@ const hotelCollection = [
     price: "110",
     address: "Norway , oslo",
     city: "norway",
-    guest: { adults: 1, kids: 0 },
-    duration: "3 days",
+    guest: { adults: 4, kids: 0 },
+    duration: 3,
   },
   {
     id: 15,
@@ -497,8 +497,8 @@ const hotelCollection = [
     price: "130",
     address: "germany , berlin",
     city: "berlin",
-    guest: { adults: 2, kids: 1 },
-    duration: "3 days",
+    guest: { adults: 4, kids: 2 },
+    duration: 5,
   },
   {
     id: 16,
@@ -524,8 +524,8 @@ const hotelCollection = [
     ],
     price: "195",
     city: "london",
-    guest: { adults: 2, kids: 2 },
-    duration: "4 days",
+    guest: { adults: 4, kids: 2 },
+    duration: 10,
   },
 ];
 

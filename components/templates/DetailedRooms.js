@@ -3,6 +3,7 @@
 import Image from "next/image";
 import hotelCollection from "../../utility/hotel-data";
 import Suggestions from "../modules/Suggestions";
+import GetRoomPopup from "@/components/modules/popup";
 import { useParams } from "next/navigation";
 import { slugify } from "@/utility/slugify";
 import { useState } from "react";
@@ -10,6 +11,7 @@ import { useState } from "react";
 function DetailedRooms() {
   const [activeTab, setActiveTab] = useState("description");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [popup, setPopup] = useState(false);
 
   const params = useParams();
   const { slug } = params;
@@ -47,6 +49,8 @@ function DetailedRooms() {
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
+
+  // Room Details for reservation
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -216,7 +220,9 @@ function DetailedRooms() {
                 <h3 className="text-lg font-bold text-gray-900 leading-snug">
                   {specificRoom.name}
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">for {specificRoom.duration}</p>
+                <p className="text-sm text-gray-500 mt-1">
+                  for {specificRoom.duration}
+                </p>
 
                 <p className="text-xs text-gray-400 mt-3 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#05B278]"></span>
@@ -239,6 +245,7 @@ function DetailedRooms() {
 
                 <button
                   type="button"
+                  onClick={() => setPopup((prev) => !prev)}
                   className="w-full py-3 rounded-xl font-semibold text-white bg-[#05B278] hover:bg-[#049966] transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   Reserve
@@ -246,6 +253,9 @@ function DetailedRooms() {
               </div>
             </div>
           </div>
+          {popup ? (
+            <GetRoomPopup room={specificRoom} onClose={() => setPopup(false)} />
+          ) : null}
 
           {/* Suggestions */}
           <div className="w-full">

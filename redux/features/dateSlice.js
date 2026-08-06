@@ -15,7 +15,8 @@ const dateSlice = createSlice({
     },
 
     clearDate(state) {
-      ((state.checkIn = ""), (state.checkOut = ""));
+      state.checkIn = "",
+      state.checkOut = "";
     },
   },
 });

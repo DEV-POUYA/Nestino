@@ -1,7 +1,10 @@
 import React from "react";
+import Panel from "../../components/templates/Panel";
 
 function dashboardPage() {
-  return <div></div>;
+  return (
+    <Panel/>
+  );
 }
 
 export default dashboardPage;

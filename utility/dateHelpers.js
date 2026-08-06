@@ -34,7 +34,7 @@ export function validateBookingDate(checkIn, checkOut) {
 }
 
 // Date formatting — use when displaying reservations
-export function formatDate(datestr, pattern = "dd mmm yyy") {
+export function formatDate(datestr, pattern = "dd MMM yyyy") {
   if (!datestr) return "";
 
   const date = parseISO(datestr);
@@ -44,7 +44,7 @@ export function formatDate(datestr, pattern = "dd mmm yyy") {
 
 // Date Parsing use inside hotelCards
 export function parseDate(dateStr) {
-  if (!dateStr) return null;
+  if (!dateStr || typeof dateStr !== "string") return null;
 
   const date = parseISO(dateStr);
   return isValid(date) ? date : null;

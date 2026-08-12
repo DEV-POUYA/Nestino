@@ -49,13 +49,6 @@ function Header() {
             >
               <Link href={"/login"}>Login</Link>
             </button>
-            <button
-              className="p-2 rounded-full bg-white/10 backdrop-blur-sm 
-                               hover:bg-white/20 transition-all duration-200 
-                               active:scale-90"
-            >
-              <BookmarkIcon className="w-6 h-6 text-white" />
-            </button>
           </div>
         </div>
       </header>
@@ -63,28 +56,28 @@ function Header() {
       {/* Mobile Bottom Navbar – now with Login & Bookmark */}
       <nav
         className="md:hidden fixed bottom-0 left-0 right-0 z-50 
-                      bg-white/95 backdrop-blur-md border-t border-emerald-100 shadow-lg"
+                      bg-slate-900/70 backdrop-blur-md border-t border-emerald-100 shadow-lg"
       >
         <div className="flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700">
           {/* Left side – navigation links */}
           <div className="flex items-center gap-3 text-xs sm:text-sm">
             <Link
               href="/"
-              className="hover:text-emerald-600 active:scale-95 transition-all"
+              className="text-white hover:text-emerald-600 active:scale-95 transition-all"
             >
               Home
             </Link>
             <span className="text-emerald-300">|</span>
             <Link
               href="/reserve"
-              className="hover:text-emerald-600 active:scale-95 transition-all"
+              className="text-white hover:text-emerald-600 active:scale-95 transition-all"
             >
               Reserve
             </Link>
             <span className="text-emerald-300">|</span>
             <Link
               href="/about"
-              className="hover:text-emerald-600 active:scale-95 transition-all"
+              className="text-white hover:text-emerald-600 active:scale-95 transition-all"
             >
               About
             </Link>
@@ -97,12 +90,7 @@ function Header() {
             >
               <Link href={"/login"}>Login</Link>
             </button>
-            <button
-              className="p-1.5 rounded-full bg-emerald-50 hover:bg-emerald-100 
-                               transition-all active:scale-90"
-            >
-              <BookmarkIcon className="w-5 h-5 text-emerald-700" />
-            </button>
+            
           </div>
         </div>
       </nav>

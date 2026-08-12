@@ -53,16 +53,16 @@ function DetailedRooms() {
   // Room Details for reservation
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8">
       {/* Parent layout: Left + Right */}
-      <div className="flex flex-col lg:flex-row gap-10 items-start">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
         {/* ========== LEFT SIDE ========== */}
         {/* Carousel + Tabs */}
         <section className="w-full lg:w-[80%]">
           {/* Carousel */}
           <div className="relative max-w-4xl mx-auto">
             {/* Main Image */}
-            <div className="relative h-64 sm:h-80 md:h-100 overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+            <div className="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
                 src={pickImage[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
@@ -73,15 +73,15 @@ function DetailedRooms() {
               />
 
               {/* Soft gradient */}
-              <div className="absolute inset-x-0 bottom-0 h-20 bg-lenear-to-t from-black/40 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-black/40 to-transparent pointer-events-none" />
             </div>
 
             {/* Previous Button */}
             <button
               type="button"
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10
-                         w-11 h-11 rounded-full bg-white/90 hover:bg-white
+              className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-10
+                         w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white
                          shadow-lg flex items-center justify-center
                          transition-all duration-200 hover:scale-105 active:scale-95"
               aria-label="Previous slide"
@@ -105,8 +105,8 @@ function DetailedRooms() {
             <button
               type="button"
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10
-                         w-11 h-11 rounded-full bg-white/90 hover:bg-white
+              className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-10
+                         w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white
                          shadow-lg flex items-center justify-center
                          transition-all duration-200 hover:scale-105 active:scale-95"
               aria-label="Next slide"
@@ -127,7 +127,7 @@ function DetailedRooms() {
             </button>
 
             {/* Dots Indicators */}
-            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
+            <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
               {pickImage.map((_, index) => (
                 <button
                   key={index}
@@ -145,8 +145,10 @@ function DetailedRooms() {
           </div>
 
           {/* Description / Features Tabs */}
-          <div className="mt-8">
-            <p className="mb-6 font-bold text-2xl">Complementary Details</p>
+          <div className="mt-6 sm:mt-8">
+            <p className="mb-4 sm:mb-6 font-bold text-xl sm:text-2xl">
+              Complementary Details
+            </p>
 
             {/* Tab Buttons */}
             <div className="flex flex-wrap border border-gray-200 rounded-t-xl overflow-hidden bg-gray-50">
@@ -175,7 +177,7 @@ function DetailedRooms() {
             </div>
 
             {/* Tab Content */}
-            <div className="border border-t-0 border-gray-200 rounded-b-xl bg-white p-5 sm:p-6 shadow-sm">
+            <div className="border border-t-0 border-gray-200 rounded-b-xl bg-white p-4 sm:p-5 md:p-6 shadow-sm">
               {activeTab === "description" && (
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -211,10 +213,10 @@ function DetailedRooms() {
 
         {/* ========== RIGHT SIDE ========== */}
         {/* Reserve Card + Suggestions */}
-        <section className="w-full lg:w-[20%] flex flex-col items-center gap-8">
-          {/* Reserve Card */}
-          <div className="relative w-80 h-85 ml-16 rounded-[14px] z-10 overflow-hidden flex flex-col items-center justify-center shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
-            <div className="relative z-2 w-full h-full flex flex-col justify-between p-6 bg-white/95 backdrop-blur-xl rounded-[10px]">
+        <section className="w-full lg:w-[20%] flex flex-col items-center gap-6 sm:gap-8">
+          {/* Reserve Card - fully responsive */}
+          <div className="relative w-full max-w-sm mx-auto lg:ml-17 lg:w-80 lg:max-w-none lg:mx-0 rounded-[14px] z-10 overflow-hidden flex flex-col items-center justify-center shadow-[20px_20px_60px_#bebebe,-20px_-20px_60px_#ffffff]">
+            <div className="relative z-2 w-full h-full min-h-85 flex flex-col justify-between p-5 sm:p-6 bg-white/95 backdrop-blur-xl rounded-[10px]">
               {/* Top content */}
               <div>
                 <h3 className="text-lg font-bold text-gray-900 leading-snug">
@@ -253,12 +255,13 @@ function DetailedRooms() {
               </div>
             </div>
           </div>
+
           {popup ? (
             <GetRoomPopup room={specificRoom} onClose={() => setPopup(false)} />
           ) : null}
 
           {/* Suggestions */}
-          <div className="w-full">
+          <div className="lg:w-full">
             <Suggestions />
           </div>
         </section>

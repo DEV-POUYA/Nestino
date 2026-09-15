@@ -15,7 +15,7 @@ async function Panel() {
             Welcome to your dashboard
           </h1>
 
-          <p className="mt-2 max-w-xl text-sm text-gray-500 sm:text-base">
+          <p className="mt-2 max-w-xl text-sm text-gray-500 sm:text-base"> 
             Manage your current hotel reservations.
           </p>
         </header>

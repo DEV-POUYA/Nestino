@@ -1,4 +1,4 @@
-import DetailedRooms from "../../../components/templates/DetailedRooms";
+import DetailedRooms from "@/components/templates/DetailedRooms";
 
 function detailedPage() {
   return (

@@ -95,7 +95,7 @@ function HotelCards() {
 
                 <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-2.5 rounded-xl transition-colors duration-200">
                   <Link href={`/reserve/${slugify(hotel.name)}`}>
-                    Book and more details
+                    more details
                   </Link>
                 </button>
               </div>

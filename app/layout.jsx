@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
+          {/* <Header /> */}
         <StoreProvider>
-          <Header />
           <main className="flex-1">{children}</main>
         </StoreProvider>
       </body>

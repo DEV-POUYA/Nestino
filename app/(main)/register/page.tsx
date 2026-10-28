@@ -1,5 +1,5 @@
 import React from "react";
-import RegisterForm from "../../components/templates/RegisterForm";
+import RegisterForm from "../../../components/templates/RegisterForm";
 
 function RegisterPage() {
   return (

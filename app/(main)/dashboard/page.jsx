@@ -1,5 +1,5 @@
-import React from "react";
-import Panel from "../../components/templates/Panel";
+
+import Panel from "@/components/templates/Panel";
 
 function dashboardPage() {
   return (

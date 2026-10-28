@@ -76,10 +76,10 @@ function Header() {
             </Link>
             <span className="text-emerald-300">|</span>
             <Link
-              href="/about"
+              href="/contactus"
               className="text-white hover:text-emerald-600 active:scale-95 transition-all"
             >
-              About
+              Contact Us
             </Link>
           </div>
 
@@ -90,7 +90,6 @@ function Header() {
             >
               <Link href={"/login"}>Login</Link>
             </button>
-            
           </div>
         </div>
       </nav>

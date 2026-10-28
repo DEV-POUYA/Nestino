@@ -35,10 +35,10 @@ function Header() {
               Reserve
             </Link>
             <Link
-              href="/about"
+              href="/contactus"
               className="text-white hover:text-emerald-300 transition-colors duration-200"
             >
-              About
+              Contact us
             </Link>
           </nav>
           <div className="flex items-center gap-4">

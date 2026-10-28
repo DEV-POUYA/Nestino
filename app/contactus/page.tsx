@@ -1,4 +1,7 @@
-export default function AboutUs() {
+import Link from "next/link";
+
+
+export default function ContactUs() {
   return (
     <>
       <div className="hero min-h-screen flex items-center justify-center bg-[#f5f5f7] px-6 text-[#1d1d1f] sm:px-10 lg:px-16">
@@ -69,9 +72,9 @@ export default function AboutUs() {
                 />
 
                 <div className="mt-2">
-                  <a className="link link-hover text-sm text-[#6b6b6b] hover:text-[rgb(0,212,146)]">
+                  <Link className="link link-hover text-sm text-[#6b6b6b] hover:text-[rgb(0,212,146)]">
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
 
                 <button className="btn mt-5 w-full rounded-full border-none bg-[rgb(0,212,146)] text-white shadow-none transition-transform duration-200 hover:bg-[rgb(0,190,132)] hover:-translate-y-0.5">

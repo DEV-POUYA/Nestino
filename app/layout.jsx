@@ -1,5 +1,5 @@
 import "./globals.css";
-import MainHeader from "@/components/templates/header";
+import Header from "@/components/templates/header";
 import StoreProvider from "@/redux/StoreProvider";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         <StoreProvider>
-          <MainHeader />
+          <Header />
           <main className="flex-1">{children}</main>
         </StoreProvider>
       </body>

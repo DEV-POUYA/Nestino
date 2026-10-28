@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 export default function ContactUs() {
   return (
     <>
@@ -72,7 +71,7 @@ export default function ContactUs() {
                 />
 
                 <div className="mt-2">
-                  <Link className="link link-hover text-sm text-[#6b6b6b] hover:text-[rgb(0,212,146)]">
+                  <Link href="#" className="link link-hover text-sm text-[#6b6b6b] hover:text-[rgb(0,212,146)]">
                     Forgot password?
                   </Link>
                 </div>
